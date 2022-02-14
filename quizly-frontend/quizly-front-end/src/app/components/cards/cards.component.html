@@ -1,0 +1,6 @@
+<header></header>
+<header-cards (callOpenCardModal)="openCardModal($event)"></header-cards>
+<card-list (callOpenCardModal)="openCardModal($event)" [cardList]="cardList" [lectureId]="lectureId"></card-list>
+<add-card-modal *ngIf="this.isAddCardModalOpened" (callCancelCardModal)="cancelCardModal($event)" (callAddNewCard)="addNewCard($event)"></add-card-modal>
+<edit-card-modal *ngIf="this.isEditCardModalOpened" [card]="selectedCard" (callCancelCardModal)="cancelCardModal($event)" (callEditCard)="editCard($event)"></edit-card-modal>
+<delete-card-modal *ngIf="this.isDeleteCardModalOpened" [card]="selectedCard"  (callCancelCardModal)="cancelCardModal($event)" (callDeleteCard)="deleteCard()"></delete-card-modal>

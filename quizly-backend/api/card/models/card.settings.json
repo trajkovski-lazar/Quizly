@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cards",
+  "info": {
+    "name": "Card",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "required": true,
+      "default": "easy"
+    },
+    "question": {
+      "type": "text",
+      "required": true
+    },
+    "answer": {
+      "type": "text"
+    },
+    "lecture": {
+      "via": "cards",
+      "model": "lecture"
+    }
+  }
+}

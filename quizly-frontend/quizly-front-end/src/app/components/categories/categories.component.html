@@ -1,0 +1,7 @@
+<header></header>
+<header-categories (callOpenCategoryModal)="openCategoryModal($event)"></header-categories>
+<category-list (callOpenCategoryModal)="openCategoryModal($event)" [categoryList]="categoryList"></category-list>
+<add-category-modal *ngIf="this.isAddCategoryModalOpen" (callCancelCategoryModal)="cancelCategoryModal($event)" (callAddNewCategory)="addNewCategory($event)"></add-category-modal>
+<edit-category-modal *ngIf="this.isEditCategoryModalOpen" [category]="selectedCategory" (callCancelCategoryModal)="cancelCategoryModal($event)" (callEditCategoryName)="editCategoryName($event)"></edit-category-modal>
+<delete-category-modal *ngIf="this.isDeleteCategoryModalOpen" [category]="selectedCategory" (callCancelCategoryModal)="cancelCategoryModal($event)" (callDeleteCategory)="deleteCategory()"></delete-category-modal> 
+ 

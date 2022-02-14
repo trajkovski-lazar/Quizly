@@ -1,0 +1,40 @@
+<div class="fixed z-10 inset-0 flex items-center justify-center h-screen bg-gray-500 bg-opacity-75">
+    <div class="flex flex-col w-11/12 sm:w-5/6 lg:w-1/2 max-w-2xl mx-auto rounded-lg border border-gray-300 shadow-xl">
+        <div class="flex justify-start p-6 bg-white border-b border-gray-200 rounded-tl-lg rounded-tr-lg">
+            <div
+                class="mr-2 flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:h-8 sm:w-8">
+                <svg class="h-6 w-6 text-blue-600 ml-1 mt-1 fill-current" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path
+                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                </svg>
+            </div>
+            <p class="font-PTSans font-bold text-2xl">Edit card</p>
+        </div>
+        <div class="flex flex-col px-3 py-2 bg-gray-50">
+            <div class="flex justify-start  my-6 mx-3">
+                <div class="relative mt-2 font-PTSans text-1xl">Difficulty</div>
+                <select (change)="selectLevel($event)"
+                    class="ml-5 border border-gray-200 rounded font-PTSans text-1xl w-24 h-10">
+                    <option>Easy</option>
+                    <option>Medium</option>
+                    <option>Hard</option>
+                </select>
+            </div>
+            <textarea [(ngModel)]="cardQuestion" type="text" name="" placeholder="Enter your question..."
+                class="p-3 mb-2 bg-white border border-gray-200 rounded shadow-sm h-36"></textarea>
+            <textarea [(ngModel)]="cardAnswer" type="text" name="" placeholder="Enter your answer..."
+                class="p-3 mb-2 bg-white border border-gray-200 rounded shadow-sm h-36"></textarea>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button type="submit" (click)="editCard()"
+                    class="mt-3 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+                    Confirm
+                </button>
+                <button type="button" (click)="cancelEditCardModal()"
+                    class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<header></header>
+<header-lectures (callOpenLectureModal)="openLectureModal($event)"></header-lectures>
+<lecture-list (callOpenLectureModal)="openLectureModal($event)" [lectureList]="lectureList" [categoryId]="categoryId"></lecture-list>
+<add-lecture-modal *ngIf="this.isAddLectureModalOpened" (callCancelLectureModal)="cancelLectureModal($event)" (callAddNewLecture)="addNewLecture($event)"></add-lecture-modal>
+<edit-lecture-modal *ngIf="this.isEditLectureModalOpened" [lecture]="selectedLecture" (callCancelLectureModal)="cancelLectureModal($event)" (callEditLectureName)="editLectureName($event)"></edit-lecture-modal>
+<delete-lecture-modal *ngIf="this.isDeleteLectureModalOpened" [lecture]="selectedLecture" (callCancelLectureModal)="cancelLectureModal($event)" (callDeleteLecture)="deleteLecture()"></delete-lecture-modal>

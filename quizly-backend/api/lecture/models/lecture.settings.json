@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lectures",
+  "info": {
+    "name": "Lecture",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "via": "lectures",
+      "model": "category"
+    },
+    "cards": {
+      "collection": "card",
+      "via": "lecture"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lectures": {
+      "via": "category",
+      "collection": "lecture"
+    },
+    "owner": {
+      "via": "categories",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

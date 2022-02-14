@@ -1,0 +1,42 @@
+#logo {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+}
+
+#middle-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#text-content {
+    width: 30%;
+}
+
+#header {
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+#text {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 24px;
+}
+
+#btn {
+    padding-top: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 7px;
+    border-radius: 12px;
+    background-color: #4b5563;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+

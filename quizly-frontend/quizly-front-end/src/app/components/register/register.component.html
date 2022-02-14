@@ -1,0 +1,48 @@
+<div>
+    <div class="split left font-PTSans">
+        <img
+            src="https://images.pexels.com/photos/7583935/pexels-photo-7583935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+    </div>
+    <div class="split right font-PTSans">
+        <div class="w-full h-screen flex items-center justify-center">
+            <div class="w-full md:w-1/3 bg-white rounded-lg">
+                <div class="mb-10">
+                    <div class="text-3xl text-gray-700 flex justify-center">Create your account</div>
+                    <div class="text-md text-gray-400 flex justify-center mt-2">Fill in the fields bellow.</div>
+                </div>
+                <div class="px-4 pb-10">
+                    <div class="w-full mb-2">
+                        <div class="flex items-center">
+                            <i class='ml-3 fill-current text-gray-400 text-xs z-10 fas fa-user'></i>
+                            <input [(ngModel)]="username" type='text' placeholder="Username"
+                                class="px-8 w-full border rounded px-3 py-2 text-gray-700 focus:outline-none" />
+                        </div>
+                    </div>
+                    <div class="w-full mb-2">
+                        <div class="flex items-center">
+                            <i class='ml-3 fill-current text-gray-400 text-xs z-10 fas fa-lock'></i>
+                            <input [(ngModel)]="email" type='email' placeholder="Email"
+                                class="mt-2 px-8 w-full border rounded px-3 py-2 text-gray-700 focus:outline-none" />
+                        </div>
+                    </div>
+                    <div class="w-full mb-2">
+                        <div class="flex items-center">
+                            <i class='ml-3 fill-current text-gray-400 text-xs z-10 fas fa-lock'></i>
+                            <input [(ngModel)]="password" type='password' placeholder="Password"
+                                class="mt-2 px-8 w-full border rounded px-3 py-2 text-gray-700 focus:outline-none" />
+                        </div>
+                    </div>
+                    <div class="w-full mb-2">
+                        <div class="flex items-center">
+                            <i class='ml-3 fill-current text-gray-400 text-xs z-10 fas fa-lock'></i>
+                            <input type='password' placeholder="Confirm password"
+                                class="mt-2 px-8 w-full border rounded px-3 py-2 text-gray-700 focus:outline-none" />
+                        </div>
+                    </div>
+                    <button (click)="signUp()"
+                        class="w-full py-2 mt-4 rounded-full bg-gray-500 text-white hover:bg-gray-600 focus:outline-none ml-2">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

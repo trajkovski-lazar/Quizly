@@ -1,0 +1,115 @@
+{
+    "Users": [
+        {
+            "id": 1,
+            "firstName": "Lazar",
+            "lastName": "Trajkovski",
+            "username": "Trajkovski96",
+            "password": "Trajkovski1234!",
+            "email": "lazar.trajkovski@yahoo.com"
+        },
+        {
+            "id": 2,
+            "firstName": "Emilija",
+            "lastName": "Trajkovska",
+            "username": "Trajkovska94",
+            "password": "Trajkovska1234!",
+            "email": "emilija.trajkovska@yahoo.com"
+        },
+        {
+            "id": 3,
+            "firstName": "Vasil",
+            "lastName": "Ristovski",
+            "username": "Ristovski92",
+            "password": "Ristovski1234!",
+            "email": "vasil.ristovski@yahoo.com"
+        }
+    ],
+    "Categories": [
+        {
+            "id": 1,
+            "name": "Internet Tehnologies",
+            "lectures" : [1, 2, 3, 4]
+        },
+        {
+            "id": 2,
+            "name": "Structure Programming",
+            "lectures": [5, 6, 7]
+        },
+        {
+            "id": 3,
+            "name": "Object Oriented Programming",
+            "lectures": [8, 9]
+        }
+    ],
+    "Lectures": [
+        {
+            "id": 1,
+            "name": "HTML"
+        },
+        {
+            "id": 2,
+            "name": "CSS"
+        },
+        {
+            "id": 3,
+            "name": "jQuery"
+        },
+        {
+            "id": 4,
+            "name": "JavaScript"
+        },
+        {
+            "id": 5,
+            "name": "Introduction to Structure Programming"
+        },
+        {
+            "id": 6,
+            "name": "Variables in C"
+        },
+        {
+            "id": 7,
+            "name": "Statements in C"
+        },
+        {
+            "id": 8,
+            "name": "Introduction to Object Oriented Programming"
+        },
+        {
+            "id": 9,
+            "name": "Objects and classes"
+        }
+    ],
+    "Cards": [
+        {
+            "id": 1,
+            "level": "Easy",
+            "question": "How can we resize the image?",
+            "answer": "We can resize the image using the height and width."
+        },
+        {
+            "id": 2,
+            "level": "Easy",
+            "question": "What is the <br> tag for?",
+            "answer": "The <br> tag is for line break."
+        },
+        {
+            "id": 3,
+            "level": "Medium",
+            "question": "What is the difference between XML and HTML?",
+            "answer": "XML is used for exchanging data, HTML is not."
+        },
+        {
+            "id": 4,
+            "level": "Hard",
+            "question": "Which attribute enables a set of extra restrictions on any content hosted by the <iframe>?",
+            "answer": "Sandbox."
+        },
+        {
+            "id": 5,
+            "level": "Hard",
+            "question": "Which property returns the URL of current audio/video?",
+            "answer": "currentSrc."
+        }
+    ]
+}

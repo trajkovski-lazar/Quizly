@@ -1,0 +1,9 @@
+<div class="flex justify-between p-8 my-2 mx-2">
+  <div class="relative font-PTSans font-bold text-5xl my-6">Welcome to Quizly</div>
+  <div (click)="openLogOut()"
+    class="bg-red-400 absolute right-20 top-12 w-16 h-16 rounded-full font-PTSans text-2xl py-3 flex justify-center hover:bg-red-300 cursor-pointer">
+    Exit</div>
+  <div *ngIf="this.isLogOutOpen" (click)="logOut()"
+    class="bg-white absolute right-14 top-16 my-14 px-4 py-2 text-lg border-1 rounded-lg border-black-200 hover:text-grey-300 cursor-pointer">
+    Log Out</div>
+</div>
